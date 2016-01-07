@@ -1,5 +1,3 @@
-var limit = 140;
-
 $('body').on("mousedown", "button.tweet-action", function() {
 
     var button = $(this);
@@ -15,9 +13,9 @@ $('body').on("mousedown", "button.tweet-action", function() {
                 return;
             
             var tweetbox = button.closest("form").find(".tweet-box");
-            var text_to_add = "";
-            var fill_to = limit - tweetbox.text().length;
-            for (var i = 0; i < fill_to; i++) {
+            var tweetcounter = button.closest("form").find(".tweet-counter").text();
+            var text_to_add = " ";  // add a space to no break links
+            for (var i = 0; i < tweetcounter - 1; i++) {
                 text_to_add += filler[i % filler.length];
             }
             tweetbox.text(tweetbox.text() + text_to_add);
