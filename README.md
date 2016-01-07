@@ -4,7 +4,7 @@ tweetfiller
 Fill unused characters with inspired quotes of your creation before sending a new tweet with this Google Chrome extension.
 
 * Author: Julien CHAUMONT (https://julienc.io)
-* Version: 1.0
+* Version: 1.0.1
 * Date: 2016-01-06
 * Licence: MIT
 * Url: https://github.com/julienc91/tweetfiller
